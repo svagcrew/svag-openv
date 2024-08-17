@@ -18,9 +18,13 @@
     "access": "public"
   },
   "main": "./dist/index.js",
+  "bin": {
+    "openv": "./bin/index.js"
+  },
   "files": [
     "./src/**/*",
-    "./dist/**/*"
+    "./dist/**/*",
+    "./bin/**/*"
   ],
   "scripts": {
     "build": "svag-ts build",
@@ -32,6 +36,12 @@
     "test": "svag-jest test",
     "types": "svag-ts types",
     "watch": "svag-ts watch"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "lodash": "^4.17.21",
+    "svag-cli-utils": "^0.1.71",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
