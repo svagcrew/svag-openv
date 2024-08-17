@@ -1,6 +1,6 @@
 {
   "name": "svag-openv",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "homepage": "https://github.com/svagcrew/svag-openv",
   "repository": {
     "type": "git",
@@ -23,15 +23,15 @@
     "./dist/**/*"
   ],
   "scripts": {
-    "prettify": "svag-prettier prettify",
-    "dev": "svag-ts dev",
-    "watch": "svag-ts watch",
-    "types": "svag-ts types",
     "build": "svag-ts build",
-    "start": "svag-ts start",
+    "dev": "svag-ts dev",
     "lint": "svag-lint lint",
+    "prepare": "husky",
+    "prettify": "svag-prettier prettify",
+    "start": "svag-ts start",
     "test": "svag-jest test",
-    "prepare": "husky"
+    "types": "svag-ts types",
+    "watch": "svag-ts watch"
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
